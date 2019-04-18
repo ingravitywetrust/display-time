@@ -1,0 +1,13 @@
+exports.displayaTime = function(v_time){
+    let v_h = v_time.getHours(),
+      v_m = v_time.getMinutes(),
+      v_s = v_time.getSeconds(),
+      myTime;
+
+  if (v_h < 10) v_h = '0' + v_h;
+  if (v_m < 10) v_m = '0' + v_m;
+  if (v_s < 10) v_s = '0' + v_s;
+  myTime = v_h + ':' + v_m + ':' + v_s;
+  
+  return myTime;
+};
